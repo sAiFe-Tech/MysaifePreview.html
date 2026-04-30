@@ -769,6 +769,7 @@ h3{ font-size:18px; line-height:1.15; }
   border:1px solid rgba(95,156,53,.22); border-radius:var(--r-md);
 }
 .agent-banner b   { display:block; color:var(--navy); font-size:14px; margin-bottom:4px; }
+.agent-banner b .inline-bird-mark{ display:none; }
 .agent-banner span{ display:block; color:#5d6a82; font-size:12px; line-height:1.45; }
 .agent-banner .mini-pill{
   display:inline-flex; align-items:center;
@@ -954,7 +955,7 @@ function brandMark(label) {
 }
 
 function openAgentPrompt(title, body) {
-  openSheet(title, brandMark('Suggested by MySaiFe Agent'), body, [
+  openSheet(title, brandMark('Suggested by MySAiFe Agent'), body, [
     {label:'Add now', primary:true, fn:function(){ closeSheet(); toast('Added to your guided setup'); }},
     {label:'Remind me later', primary:false, fn:function(){ closeSheet(); toast('Reminder saved for later'); }}
   ]);
@@ -1138,6 +1139,19 @@ document.addEventListener('DOMContentLoaded', function () {
 <div class="trust-line"><b>Partner-led launch</b> <span>Designed for phased rollout with trusted institutions and headline brands.</span></div>
 </div>
 </div>
+
+<div class="notice" style="margin-top:14px;">
+<div class="section-pill">Trust &amp; Safety</div>
+<h3 style="margin:6px 0 8px;font-size:15px;">Preparation and organisation — not advice</h3>
+<p style="font-size:13px;color:var(--muted);margin:0 0 10px;line-height:1.5;">MySAiFe is a preparation and organisation platform. It helps you store, structure and understand your own information so you can decide what to do next — decisions and regulated activity always remain with you and your chosen professionals.</p>
+<div style="display:grid;gap:8px;margin-top:8px;">
+<div style="padding:8px 10px;background:#fff;border-radius:10px;border:1px solid var(--line);font-size:12.5px;line-height:1.4;"><b style="display:block;color:var(--navy);margin-bottom:2px;">No financial advice</b><span style="color:var(--muted);">MySAiFe does not recommend, arrange or sell financial, mortgage, insurance or investment products. We do not assess suitability.</span></div>
+<div style="padding:8px 10px;background:#fff;border-radius:10px;border:1px solid var(--line);font-size:12.5px;line-height:1.4;"><b style="display:block;color:var(--navy);margin-bottom:2px;">Private by design</b><span style="color:var(--muted);">You remain in control of what is added, shared and released — nothing leaves without your explicit action.</span></div>
+<div style="padding:8px 10px;background:#fff;border-radius:10px;border:1px solid var(--line);font-size:12.5px;line-height:1.4;"><b style="display:block;color:var(--navy);margin-bottom:2px;">Seek professional advice</b><span style="color:var(--muted);">We recommend independent financial, legal or other professional advice before acting on any information in your MySAiFe.</span></div>
+<div style="padding:8px 10px;background:#fff;border-radius:10px;border:1px solid var(--line);font-size:12.5px;line-height:1.4;"><b style="display:block;color:var(--navy);margin-bottom:2px;">Partner introductions</b><span style="color:var(--muted);">MySAiFe may receive an introduction fee from Partners. This does not affect the information we present to you. The regulated firm you connect with takes full responsibility for any transaction.</span></div>
+</div>
+<p style="font-size:11.5px;color:var(--muted);margin:10px 0 0;line-height:1.5;">Nothing in MySAiFe should be treated as financial, legal, tax, mortgage, insurance or investment advice, or as a financial promotion. MySAiFe introduces users to providers — it does not assess suitability or conduct regulated activity.</p>
+</div>
 <div class="commercial-card">
 <div class="section-pill">Commercial partnership</div>
 <h3>Built for trusted distribution</h3>
@@ -1243,7 +1257,7 @@ document.addEventListener('DOMContentLoaded', function () {
   <p style="margin:0;color:var(--navy);font-size:14px;line-height:1.55;font-weight:700;">Your information isn’t just stored — it’s structured so your family can act on it when it matters.</p>
 </div>
 <div class="card" style="margin-top:12px;background:linear-gradient(180deg,#fffdf8 0%,#f6f3fc 100%);border:1px solid rgba(122,106,240,.20);">
-<div class="section-pill" style="background:#f4f1fa;color:#5e4f9c;">Younger family · s<span class="slife-mark">&rsquo;</span>LiFe by MySaiFe</div>
+<div class="section-pill" style="background:#f4f1fa;color:#5e4f9c;">Younger family · s<span class="slife-mark">&rsquo;</span>LiFe by MySAiFe</div>
 <h3 style="margin:0 0 6px;">For when life starts getting real</h3>
 <p style="margin:0 0 12px;color:var(--muted);font-size:14px;line-height:1.5;">Maya and Josh each have their own s<span class="slife-mark">&rsquo;</span>LiFe — a slimmer, gentler entry point built for first jobs, first tenancies, first MOTs. Records they need to track day-to-day live there. The household keeps a quiet thread to the things that still matter on this side (passports, NHS references, beneficiary shares).</p>
 <div class="mini-actions">
@@ -1902,7 +1916,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <div class="card onboard-focus" style="margin-bottom:12px;">
 <div class="section-pill">Progressive reveal</div>
 <h3 style="margin:0 0 6px;">Property grows from essentials into wider household readiness</h3>
-<p style="margin:0;color:var(--muted);font-size:14px;line-height:1.5;">Start with deeds, mortgage and utilities. Once those basics are in place, MySaiFe can reveal home maintenance planning, key trades, and property-income support where relevant.</p>
+<p style="margin:0;color:var(--muted);font-size:14px;line-height:1.5;">Start with deeds, mortgage and utilities. Once those basics are in place, MySAiFe can reveal home maintenance planning, key trades, and property-income support where relevant.</p>
 <div class="unlock-grid">
 <div class="unlock-card"><b>Now visible</b><span>Mortgage, deeds, providers and key records</span></div>
 <div class="unlock-card"><b>Unlocked</b><span>Home maintenance and renewal planning</span></div>
@@ -1965,7 +1979,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <div class="card" style="margin-top:12px;">
 <div class="section-pill" style="background:#fff3df;color:#a87618;">Renewal window</div>
-<div class="g-row"><div><h3 style="margin:0 0 6px;">Fixed rate ends 14 July 2026</h3><p style="margin:0;color:var(--muted);font-size:14px;line-height:1.5;">MySaiFe will prompt six months ahead so you can compare options calmly, not under pressure.</p></div><div class="gauge amber" style="--p:78;"><span>8 mo</span></div></div>
+<div class="g-row"><div><h3 style="margin:0 0 6px;">Fixed rate ends 14 July 2026</h3><p style="margin:0;color:var(--muted);font-size:14px;line-height:1.5;">MySAiFe will prompt six months ahead so you can compare options calmly, not under pressure.</p></div><div class="gauge amber" style="--p:78;"><span>8 mo</span></div></div>
 <div class="progress-list" style="margin-top:12px;">
 <div class="progress-item"><div><strong>Standard Variable Rate risk</strong><div class="label">Lloyds SVR currently 8.24% — monthly payment would rise to ≈ £2,010 if no new deal agreed</div></div><div class="tag redtag">Avoid</div></div>
 <div class="progress-item"><div><strong>Product transfer option</strong><div class="label">Lloyds&apos; own remortgage range — no legal fees, fastest path</div></div><div class="tag greentag">Simple</div></div>
@@ -1994,7 +2008,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <div class="notice" style="margin-top:12px;">
 <div class="section-pill">Not advice</div>
-<p style="font-size:13px; margin:0;">MySaiFe does not recommend mortgage products, rates or lenders. Figures here reflect what you have stored. Always confirm with your broker or lender before acting.</p>
+<p style="font-size:13px; margin:0;">You are leaving MySAiFe when you connect with a mortgage provider. MySAiFe does not recommend mortgage products, rates or lenders, and does not assess suitability. Figures here reflect what you have stored. Always confirm with your broker or lender before acting. Seek independent advice where appropriate.</p>
 </div>
 
 <div class="card tappable" onclick="show('agentHub')" style="margin-top:12px;background:linear-gradient(180deg,#fffdf8 0%,#f8f1e6 100%);border:1px solid rgba(184,150,58,.22);">
@@ -2045,7 +2059,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </div>
 <div class="notice">
 <h3 style="font-size:16px;">Professional boundary</h3>
-<p style="font-size:13px; margin:0;">sAiFe does not provide financial or investment advice, does not assess suitability and does not guarantee that any record is complete, current or sufficient for decision-making. Users should seek regulated advice where needed and maintain their own protection measures.</p>
+<p style="font-size:13px; margin:0;">MySAiFe does not provide financial or investment advice, does not assess suitability and does not guarantee that any record is complete, current or sufficient for decision-making. Users should seek independent regulated advice where needed. MySAiFe introduces users to providers — it does not assess suitability, recommend specific products, or conduct regulated activity.</p>
 </div>
 </section>
 <section class="screen bg-finance" id="investments">
@@ -2141,7 +2155,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <section class="screen bg-family" id="moneyhub">
 <div class="status"><div class="localtime"></div><div class="status-right"><button class="global-chip" onclick="toggleGlobalMenu()">UK · EN</button><div class="dots"><span></span><span></span><span></span></div></div></div>
 <div class="topbar"><button class="soft" onclick="show('financial')">← Financial</button><span class="pill">Money in &amp; out</span></div>
-<div class="hero"><h1 style="font-size:28px;">A clearer view of household money,<br/>only when it becomes useful.</h1><p>Once core finance is underway, MySaiFe can unlock a more complete picture of income, tax preparation support, family payments, gifts and charitable giving.</p></div>
+<div class="hero"><h1 style="font-size:28px;">A clearer view of household money,<br/>only when it becomes useful.</h1><p>Once core finance is underway, MySAiFe can unlock a more complete picture of income, tax preparation support, family payments, gifts and charitable giving.</p></div>
 <div class="card" style="margin-top:14px;">
 <div class="section-pill">Unlocked after core Financial reaches 60%</div>
 <div class="g-row"><div><h3 style="margin:0 0 6px;">Household money overview</h3><p style="margin:0;color:var(--muted);font-size:14px;line-height:1.5;">A single layer for income sources, outgoing commitments and records that may matter later to family members, advisers or year-end preparation.</p></div><div class="gauge green" style="--p:64;"><span>64%</span></div></div>
@@ -2296,14 +2310,14 @@ document.addEventListener('DOMContentLoaded', function () {
 <div class="card onboard-focus" style="margin-top:12px;margin-bottom:12px;">
 <div class="section-pill">Progressive reveal</div>
 <h3 style="margin:0 0 6px;">Family support appears gently, not all at once</h3>
-<p style="margin:0;color:var(--muted);font-size:14px;line-height:1.5;">MySaiFe starts with trusted contacts and emergency essentials. Deeper planning, family continuity and more sensitive guidance only appear once the user has already taken the first easier steps.</p>
+<p style="margin:0;color:var(--muted);font-size:14px;line-height:1.5;">MySAiFe starts with trusted contacts and emergency essentials. Deeper planning, family continuity and more sensitive guidance only appear once the user has already taken the first easier steps.</p>
 <div class="unlock-grid">
 <div class="unlock-card"><b>Now visible</b><span>Trusted contacts and emergency essentials</span></div>
 <div class="unlock-card"><b>Unlocked</b><span>Family continuity pack</span></div>
 <div class="unlock-card locked"><b>Next at 60%</b><span>Caregiving and support notes</span></div>
 <div class="unlock-card locked"><b>Next at 75%</b><span>Bereavement and wishes guidance</span></div>
 </div>
-<div class="unlock-celebration"><b>Family continuity now available</b><span>Because trusted contacts and emergency essentials are already underway, MySaiFe can now gently help the household prepare for more sensitive moments without overwhelming the user too early.</span><div class="mini-actions"><button class="light" onclick="show('familyplan')">Open continuity view</button><button class="ghost" onclick="celebrateUnlock('Family continuity pack','Wishes, who to call first, key policy references and practical family guidance now sit together in one protected place.')">See unlock moment</button></div></div>
+<div class="unlock-celebration"><b>Family continuity now available</b><span>Because trusted contacts and emergency essentials are already underway, MySAiFe can now gently help the household prepare for more sensitive moments without overwhelming the user too early.</span><div class="mini-actions"><button class="light" onclick="show('familyplan')">Open continuity view</button><button class="ghost" onclick="celebrateUnlock('Family continuity pack','Wishes, who to call first, key policy references and practical family guidance now sit together in one protected place.')">See unlock moment</button></div></div>
 <div class="agent-prompt-grid">
 <div class="agent-prompt"><b>Agent suggestion</b><span>“You have named trusted people. Would you like to add where the will is kept and who should be called first?”</span></div>
 </div>
@@ -2338,6 +2352,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <div class="topbar"><button class="soft" onclick="show('dashboard')" style="opacity:0.85;">← Dashboard</button><div class="pill">Partners &amp; Savings</div></div>
 <h2>Save with sAiFe</h2>
 <p class="sub">Use trusted partners and your progress milestones to reduce costs, improve cover and access better support across your household.</p>
+<div class="regulatory-note" style="margin-bottom:12px;">When you connect with a Partner, you will be leaving MySAiFe. We do not recommend or endorse any specific provider. Please make your own enquiries and seek independent professional advice where appropriate. MySAiFe may receive an introduction fee from Partners; this does not influence the information we present to you.</div>
 <div class="card">
 <div class="g-row">
 <div>
@@ -2381,7 +2396,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <div class="card onboard-focus" style="margin-bottom:12px;">
 <div class="section-pill">Progressive reveal</div>
 <h3 style="margin:0 0 6px;">Lifestyle becomes more helpful as the basics are added</h3>
-<p style="margin:0;color:var(--muted);font-size:14px;line-height:1.5;">Begin with subscriptions and everyday providers. MySaiFe can then unlock savings prompts, crucial services and household handover details once enough has been recorded.</p>
+<p style="margin:0;color:var(--muted);font-size:14px;line-height:1.5;">Begin with subscriptions and everyday providers. MySAiFe can then unlock savings prompts, crucial services and household handover details once enough has been recorded.</p>
 <div class="reveal-strip">
 <span class="reveal-pill ready">Subscriptions visible</span>
 <span class="reveal-pill">Provider records active</span>
@@ -2419,7 +2434,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </div>
 <div class="tag ambertag">Manage</div>
 </div>
-<div class="item tappable" onclick="openSheet('EE Mobile','Contract renewal 21 June · £35/mo','Matthew — SIM-only. 24-month contract ends 21 June. MySaiFe Agent is checking for a better deal now.')"><div><div class="item-name">EE Mobile</div><div class="item-meta">Contract renewal 21 June</div></div><div class="tag greentag">88%</div></div>
+<div class="item tappable" onclick="openSheet('EE Mobile','Contract renewal 21 June · £35/mo','Matthew — SIM-only. 24-month contract ends 21 June. MySAiFe Agent is checking for a better deal now.')"><div><div class="item-name">EE Mobile</div><div class="item-meta">Contract renewal 21 June</div></div><div class="tag greentag">88%</div></div>
 <div class="item tappable" onclick="openSheet('BT Broadband','Matthew &amp; Sarah · £44/mo','Full Fibre 100. Contract runs until August 2026. Router login and Wi-Fi password stored. Account number missing.')"><div><div class="item-name">BT Broadband</div><div class="item-meta">Matthew &amp; Sarah • £44/mo</div></div><div class="tag ambertag">63%</div></div>
 <div class="item tappable" onclick="openSheet('Vodafone','Maya now owns this contract','Maya took over her own £22/mo Vodafone contract last year. Reference kept here for household record only — billing and management sit in Maya&rsquo;s own s<span class="slife-mark">&rsquo;</span>LiFe.')"><div><div class="item-name">Vodafone</div><div class="item-meta">Was Maya · now her own bill</div></div><span class="tag" style="background:#f4f1fa;color:#5e4f9c;">Her layer</span></div>
 </div>
@@ -2481,7 +2496,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <div class="card onboard-focus" style="margin-top:12px;">
 <div class="section-pill">What appears next</div>
 <h3 style="margin:0 0 6px;">Crucial services and account handover</h3>
-<p style="margin:0;color:var(--muted);font-size:14px;line-height:1.5;">When more lifestyle records are complete, MySaiFe can surface the household's most important service contacts, login references and who may need access if something changes suddenly.</p>
+<p style="margin:0;color:var(--muted);font-size:14px;line-height:1.5;">When more lifestyle records are complete, MySAiFe can surface the household's most important service contacts, login references and who may need access if something changes suddenly.</p>
 <div class="inline-actions">
 <button class="secondary" onclick="show('serviceshub')">Preview crucial services</button>
 <button class="secondary" onclick="openSheet('Account handover','Shown when enough basics are ready','This layer helps households understand which digital services matter, who uses them and what family may need to cancel, continue or hand over later.')">Preview account handover</button>
@@ -2506,11 +2521,11 @@ document.addEventListener('DOMContentLoaded', function () {
 <button class="soft" onclick="show('home')">← Home</button>
 <span class="pill">Feature map</span>
 </div>
-<h2 style="margin:6px 0 8px;">Where MySaiFe can naturally grow</h2>
+<h2 style="margin:6px 0 8px;">Where MySAiFe can naturally grow</h2>
 <p class="sub">These are product extensions of the same household platform, not bolt-ons. The logic stays the same: structure the right information, the right people and the right next steps before they are urgently needed.</p>
 <div class="card onboard-focus" style="margin-bottom:12px;">
-<div class="ai" style="margin-top:0;"><span style="color:#B8963A;font-weight:900;"><span class="brand-inline-lockup">MySaiFe Agent<span class="inline-bird-mark" aria-hidden="true"></span></span></span></div>
-<p style="margin:0;color:var(--muted);font-size:14px;line-height:1.5;">These additions are shown as guided layers of the same product. The role of <strong><span class="brand-inline-lockup">MySaiFe Agent<span class="inline-bird-mark" aria-hidden="true"></span></span></strong> is to help gather records, highlight gaps, prepare households and connect them to the right next step.</p>
+<div class="ai" style="margin-top:0;"><span style="color:#B8963A;font-weight:900;"><span class="brand-inline-lockup">MySAiFe Agent<span class="inline-bird-mark" aria-hidden="true"></span></span></span></div>
+<p style="margin:0;color:var(--muted);font-size:14px;line-height:1.5;">These additions are shown as guided layers of the same product. The role of <strong><span class="brand-inline-lockup">MySAiFe Agent<span class="inline-bird-mark" aria-hidden="true"></span></span></strong> is to help gather records, highlight gaps, prepare households and connect them to the right next step.</p>
 <div class="metric-row">
 <div class="metric-pill"><b>6</b><span>Natural growth layers</span></div>
 <div class="metric-pill"><b>1</b><span>Core household logic</span></div>
@@ -2536,9 +2551,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <div class="card" style="margin-bottom:12px;background:linear-gradient(135deg,rgba(122,106,240,.10),rgba(255,253,248,1) 60%);border:1px solid rgba(122,106,240,.22);">
 <div class="section-pill" style="background:#f4f1fa;color:#5e4f9c;">For 18+ family members</div>
-<h3 style="margin:0 0 6px;">s<span class="slife-mark">&rsquo;</span>LiFe by MySaiFe — life, as it arrives</h3>
+<h3 style="margin:0 0 6px;">s<span class="slife-mark">&rsquo;</span>LiFe by MySAiFe — life, as it arrives</h3>
 <p style="margin:0 0 10px;color:var(--muted);font-size:14px;line-height:1.55;">A slimmer, friendlier shell built for first jobs, first tenancies, first cars, first proper bank accounts. Younger family members get a relatable entry point — the household keeps a thread to the things that still belong on this side.</p>
-<div class="record-line"><div class="label">Maya · 22</div><div class="value">First NHS contract · own MySaiFe via s<span class="slife-mark">&rsquo;</span>LiFe</div></div>
+<div class="record-line"><div class="label">Maya · 22</div><div class="value">First NHS contract · own MySAiFe via s<span class="slife-mark">&rsquo;</span>LiFe</div></div>
 <div class="record-line"><div class="label">Josh · 19</div><div class="value">Apprenticeship at Thales · own s<span class="slife-mark">&rsquo;</span>LiFe</div></div>
 <div class="record-line"><div class="label">When does it suit?</div><div class="value">Late teens, early twenties — the first real-life records</div></div>
 <div class="record-line"><div class="label">What links back?</div><div class="value">Passport, NHS, beneficiary shares — never financial detail</div></div>
@@ -2553,7 +2568,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <div class="icon fin"><svg viewbox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"></path><path d="M14 7h7v7"></path></svg></div>
 <div>
 <h3>Tax &amp; Income readiness</h3>
-<p>MySaiFe can organise tax-relevant property, income and expense records, group them by year and help prepare a pack for the user or their accountant.</p>
+<p>MySAiFe can organise tax-relevant property, income and expense records, group them by year and help prepare a pack for the user or their accountant.</p>
 </div>
 </div>
 <div class="progress-list">
@@ -2607,7 +2622,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </section><section class="screen bg-family" id="taxreadiness">
 <div class="status"><div class="localtime"></div><div class="status-right"><button class="global-chip" onclick="toggleGlobalMenu()">UK · EN</button><div class="dots"><span></span><span></span><span></span></div></div></div>
 <div class="topbar"><button class="soft" onclick="show('featuremap')">← Roadmap</button><span class="pill">Tax &amp; Income</span></div>
-<div class="hero"><h1 style="font-size:28px;">Tax preparation support,<br/>without pretending to be the accountant.</h1><p>MySaiFe groups tax-relevant records by year, highlights gaps, and prepares a cleaner pack for the user or adviser.</p></div>
+<div class="hero"><h1 style="font-size:28px;">Tax preparation support,<br/>without pretending to be the accountant.</h1><p>MySAiFe groups tax-relevant records by year, highlights gaps, and prepares a cleaner pack for the user or adviser.</p></div>
 <div class="card" style="margin-top:14px;"><div class="section-pill">2025/26 readiness</div><div class="g-row"><div><h3 style="margin:0 0 6px;">Household tax pack</h3><p style="margin:0;color:var(--muted);font-size:14px;line-height:1.5;">Property income, pension records, dividend notes, self-employment costs and HMRC letters gathered in one place.</p></div><div class="gauge amber" style="--p:72;"><span>72%</span></div></div></div>
 <div class="card" style="margin-top:12px;"><div class="progress-list"><div class="progress-item"><div><strong>Captured</strong><div class="label">2 rental statements · 1 pension summary · 14 expense receipts</div></div><div class="tag greentag">Stored</div></div><div class="progress-item"><div><strong>Still missing</strong><div class="label">Dividend voucher and one mortgage interest statement</div></div><div class="tag ambertag">Prompt</div></div><div class="progress-item"><div><strong>Export route</strong><div class="label">Share with accountant or download annual summary</div></div><div class="tag greentag">Ready</div></div></div><div class="inline-actions"><button class="primary" onclick="openTaxPack()">Preview tax pack</button><button class="secondary" onclick="toast('Self assessment checklist added to timeline')">Add checklist</button></div></div>
 
@@ -2631,7 +2646,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <div class="record-line"><div class="label">Paper return deadline</div><div class="value">31 October 2026</div></div>
 <div class="record-line"><div class="label">Online return deadline</div><div class="value">31 January 2027</div></div>
 <div class="record-line"><div class="label">Payment on account</div><div class="value">31 January 2027 &amp; 31 July 2027</div></div>
-<div class="record-line"><div class="label">MySaiFe nudge schedule</div><div class="value">Calm reminders at 6, 4 and 2 weeks out</div></div>
+<div class="record-line"><div class="label">MySAiFe nudge schedule</div><div class="value">Calm reminders at 6, 4 and 2 weeks out</div></div>
 </div>
 
 <div class="card" style="margin-top:12px;">
@@ -2646,7 +2661,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <div class="notice" style="margin-top:12px;">
 <div class="section-pill">Not tax advice</div>
-<p style="font-size:13px; margin:0;">MySaiFe does not calculate tax, confirm reliefs or act as your agent with HMRC. It organises what you have stored so the return can be prepared by you or your adviser.</p>
+<p style="font-size:13px; margin:0;">MySAiFe does not calculate tax, confirm reliefs or act as your agent with HMRC. It organises what you have stored so the return can be prepared by you or your adviser.</p>
 </div>
 <div class="tabbar">
 <button class="tab" onclick="show('home')"><span class="tab-icon">🏠</span>Home</button>
@@ -2815,11 +2830,11 @@ document.addEventListener('DOMContentLoaded', function () {
 <label class="toggle"><input checked="" onchange="toast('Reminders '+( this.checked?'on':'off'))" type="checkbox"/><div class="toggle-track"></div></label>
 </div>
 <div class="record-line">
-<div><div class="label">Subscription savings alerts</div><div style="font-size:12px;color:var(--muted);">When MySaiFe Agent spots savings</div></div>
+<div><div class="label">Subscription savings alerts</div><div style="font-size:12px;color:var(--muted);">When MySAiFe Agent spots savings</div></div>
 <label class="toggle"><input checked="" onchange="toast('Savings alerts '+( this.checked?'on':'off'))" type="checkbox"/><div class="toggle-track"></div></label>
 </div>
 <div class="record-line">
-<div><div class="label">MySaiFe Agent insights</div><div style="font-size:12px;color:var(--muted);">Weekly household summaries</div></div>
+<div><div class="label">MySAiFe Agent insights</div><div style="font-size:12px;color:var(--muted);">Weekly household summaries</div></div>
 <label class="toggle"><input onchange="toast('Agent insights '+( this.checked?'on':'off'))" type="checkbox"/><div class="toggle-track"></div></label>
 </div>
 </div>
@@ -2939,7 +2954,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <label class="toggle"><input checked type="checkbox" onchange="toast('Confirmation step '+( this.checked?'on':'off'))"/><div class="toggle-track"></div></label>
 </div>
 <div class="record-line">
-<div><div class="label">Weekly sync summary</div><div style="font-size:12px;color:var(--muted);">A calm household update from <span class="brand-inline-lockup">MySaiFe Agent<span class="inline-bird-mark" aria-hidden="true"></span></span></div></div>
+<div><div class="label">Weekly sync summary</div><div style="font-size:12px;color:var(--muted);">A calm household update from <span class="brand-inline-lockup">MySAiFe Agent<span class="inline-bird-mark" aria-hidden="true"></span></span></div></div>
 <label class="toggle"><input checked type="checkbox" onchange="toast('Weekly sync summary '+( this.checked?'on':'off'))"/><div class="toggle-track"></div></label>
 </div>
 </div>
@@ -3049,7 +3064,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <div class="topbar"><button class="soft" onclick="show('onboardHousehold')">← Back</button><div class="pill">Step 4 of 5</div></div>
 <div class="onboard-hero">
 <h2 class="onboard-title">What would you like to start with?</h2>
-<p class="onboard-copy">Most people in our research wanted to focus on more than one thing, so go ahead — pick up to three. MySaiFe will weave them into your dashboard from day one.</p>
+<p class="onboard-copy">Most people in our research wanted to focus on more than one thing, so go ahead — pick up to three. MySAiFe will weave them into your dashboard from day one.</p>
 </div>
 <div class="card onboard-card">
 <div class="g-row" style="margin-bottom:10px;">
@@ -3371,7 +3386,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <p style="margin:0 0 14px;color:var(--navy);font-size:14px;line-height:1.55;">The smaller things that keep a household running. None of these are urgent — they are here so nobody has to guess.</p>
 
 <div style="margin:0 0 4px;font-size:13px;font-weight:800;letter-spacing:.06em;color:#a87618;text-transform:uppercase;">The children</div>
-<div class="record-line"><div class="label">Maya · 22</div><div class="value">First full-time job at Oxford Health NHS · own MySaiFe via s<span class="slife-mark">&rsquo;</span>LiFe</div></div>
+<div class="record-line"><div class="label">Maya · 22</div><div class="value">First full-time job at Oxford Health NHS · own MySAiFe via s<span class="slife-mark">&rsquo;</span>LiFe</div></div>
 <div class="record-line"><div class="label">Josh · 19</div><div class="value">Second year of Thales apprenticeship · houseshare in Reading · own s<span class="slife-mark">&rsquo;</span>LiFe</div></div>
 <div class="record-line"><div class="label">Their household share</div><div class="value">Records still held this side: passport references, NHS numbers, beneficiary shares</div></div>
 <div class="record-line"><div class="label">Their independent records</div><div class="value">Tenancies, payslips, student loans &amp; first cars sit in their own s<span class="slife-mark">&rsquo;</span>LiFe layers</div></div>
@@ -3617,7 +3632,7 @@ Prices shown in £ for households in the United Kingdom · VAT included where ap
 
 <div class="onboard-hero">
 <h2 class="onboard-title">Everything that has happened</h2>
-<p class="onboard-copy">A quiet record of what your MySaiFe has been doing — what you&rsquo;ve added, what the Agent has tidied, and what trusted people have seen. Nothing here is shared externally.</p>
+<p class="onboard-copy">A quiet record of what your MySAiFe has been doing — what you&rsquo;ve added, what the Agent has tidied, and what trusted people have seen. Nothing here is shared externally.</p>
 </div>
 
 <div class="metric-row" style="margin-top:14px;">
@@ -3761,14 +3776,14 @@ Prices shown in £ for households in the United Kingdom · VAT included where ap
 <div class="g-row" style="margin-bottom:10px;">
 <div>
 <div class="section-pill" style="margin-bottom:0;">Earlier</div>
-<div style="font-size:12.5px;color:var(--muted);font-weight:700;margin-top:4px;">Since March 2026 — when MySaiFe was set up</div>
+<div style="font-size:12.5px;color:var(--muted);font-weight:700;margin-top:4px;">Since March 2026 — when MySAiFe was set up</div>
 </div>
 <span class="tag greentag">5 entries</span>
 </div>
 <div class="timeline-item tappable" style="cursor:pointer;" onclick="show('home')">
 <div class="timeline-dot" style="background:var(--navy-soft);"></div>
 <div style="flex:1;min-width:0;">
-<div style="font-size:14px;font-weight:800;color:var(--navy);margin-bottom:3px;">MySaiFe account created</div>
+<div style="font-size:14px;font-weight:800;color:var(--navy);margin-bottom:3px;">MySAiFe account created</div>
 <div style="font-size:13px;color:var(--muted);line-height:1.45;">Matthew Wright joined. UK · GMT · English. Onboarding completed in 6 minutes 12 seconds.</div>
 <div style="font-size:11px;color:var(--muted);font-weight:700;margin-top:6px;">March · 22 days ago · You</div>
 </div>
@@ -3932,7 +3947,7 @@ Prices shown in £ for households in the United Kingdom · VAT included where ap
 
 <div class="notice" style="margin-top:12px;">
 <div class="section-pill">Not legal advice</div>
-<p style="font-size:13px; margin:0;">MySaiFe stores a reference to your will and notes about who holds it. It does not draft, witness, store the original, or interpret your will. For legal arrangements, speak to your solicitor.</p>
+<p style="font-size:13px; margin:0;">MySAiFe stores a reference to your will and notes about who holds it. It does not draft, witness, store the original, or interpret your will. For legal arrangements, speak to your solicitor.</p>
 </div>
 
 <div class="tabbar">
@@ -3956,7 +3971,7 @@ Prices shown in £ for households in the United Kingdom · VAT included where ap
 <div class="topbar"><button class="soft" onclick="show('peoplehub')">← People</button><div class="pill" style="background:#f4f1fa;color:#5e4f9c;">Maya&rsquo;s s<span class="slife-mark">&rsquo;</span>LiFe</div></div>
 
 <div class="card" style="margin-bottom:10px;background:linear-gradient(135deg,rgba(122,106,240,.10),rgba(255,253,248,1) 60%);border:1px solid rgba(122,106,240,.18);">
-<div class="section-pill" style="background:#f4f1fa;color:#5e4f9c;">Sub-product · s<span class="slife-mark">&rsquo;</span>LiFe by MySaiFe</div>
+<div class="section-pill" style="background:#f4f1fa;color:#5e4f9c;">Sub-product · s<span class="slife-mark">&rsquo;</span>LiFe by MySAiFe</div>
 <p style="margin:0;color:var(--muted);font-size:13px;line-height:1.5;">A separate, slimmer shell for Maya — built for the first jobs, first tenancies, first MOTs. Maya runs this; the household keeps a quiet thread to passport, NHS and beneficiary references.</p>
 </div>
 
@@ -3984,7 +3999,7 @@ Prices shown in £ for households in the United Kingdom · VAT included where ap
 <div class="topbar"><button class="soft" onclick="show('peoplehub')">← People</button><div class="pill" style="background:#f4f1fa;color:#5e4f9c;">Josh&rsquo;s s<span class="slife-mark">&rsquo;</span>LiFe</div></div>
 
 <div class="card" style="margin-bottom:10px;background:linear-gradient(135deg,rgba(122,106,240,.10),rgba(255,253,248,1) 60%);border:1px solid rgba(122,106,240,.18);">
-<div class="section-pill" style="background:#f4f1fa;color:#5e4f9c;">Sub-product · s<span class="slife-mark">&rsquo;</span>LiFe by MySaiFe</div>
+<div class="section-pill" style="background:#f4f1fa;color:#5e4f9c;">Sub-product · s<span class="slife-mark">&rsquo;</span>LiFe by MySAiFe</div>
 <p style="margin:0;color:var(--muted);font-size:13px;line-height:1.5;">A separate, slimmer shell for Josh — built for the first jobs, first tenancies, first MOTs. Josh runs this; the household keeps a quiet thread to passport, NHS and beneficiary references.</p>
 </div>
 
@@ -4185,10 +4200,10 @@ function closeSheet() {
 function openAddDoc() {
   openSheet(
     'Add a document',
-    'Your MySaiFe Agent will file it automatically',
+    'Your MySAiFe Agent will file it automatically',
     'Scan, photograph or upload any document. Your Agent will identify it, suggest the right category, extract key dates and set reminders — all automatically.',
     [
-      { label:'📷  Scan or photograph document', primary:true, fn:function(){ closeSheet(); setTimeout(function(){ toast('MySaiFe Agent is reading your document…'); },300); }},
+      { label:'📷  Scan or photograph document', primary:true, fn:function(){ closeSheet(); setTimeout(function(){ toast('MySAiFe Agent is reading your document…'); },300); }},
       { label:'📁  Upload from files', primary:false, fn:function(){ closeSheet(); setTimeout(function(){ toast('File picker coming soon in the full app'); },300); }}
     ]
   );
@@ -4220,7 +4235,7 @@ function copyReferralLink(){
 }
 
 function shareReferralEmail(){
-  var subject = encodeURIComponent('Take a look at MySaiFe');
+  var subject = encodeURIComponent('Take a look at MySAiFe');
   var body = encodeURIComponent('I thought this may be useful. Explore MySaiFe here: https://mysaife.co.uk/invite/mysaife-family');
   window.location.href = 'mailto:?subject=' + subject + '&body=' + body;
 }
@@ -4233,7 +4248,7 @@ function openMeetingTour(){
   ]);
 }
 function openTaxPack(){
-  openSheet('Annual tax readiness pack','Prepared for review','MySaiFe has grouped your property income, pension notes, selected expenses and HMRC letters into one year-end pack for you or your accountant.',[
+  openSheet('Annual tax readiness pack','Prepared for review','MySAiFe has grouped your property income, pension notes, selected expenses and HMRC letters into one year-end pack for you or your accountant.',[
     {label:'Share with accountant', primary:true, fn:function(){ closeSheet(); toast('Accountant share flow coming soon'); }},
     {label:'Download summary PDF', primary:false, fn:function(){ closeSheet(); toast('Summary export prepared'); }}
   ]);
